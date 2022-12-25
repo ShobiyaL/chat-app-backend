@@ -1,6 +1,7 @@
 var express = require('express');
 require('dotenv').config();
 var bodyParser = require('body-parser')
+var cors = require('cors')
 var app = express();
 var util = require('util')
 
@@ -13,7 +14,7 @@ var io = require('socket.io')(http, {
   }
 });
 var mongoose = require('mongoose');
-var cors = require('cors')
+
 
 app.use(cors())
 
