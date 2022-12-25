@@ -15,7 +15,7 @@ var io = require('socket.io')(http, {
 });
 var mongoose = require('mongoose');
 
-
+app.use(express.json());
 app.use(cors())
 
 app.use(express.static(__dirname));
