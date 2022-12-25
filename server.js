@@ -8,7 +8,7 @@ const userRepository = require('./repositories/UserRepository');
 var http = require('http').Server(app);
 var io = require('socket.io')(http, {
   cors: {
-    origin: "http://localhost:3000",
+    origin: "http://localhost:3001",
     methods: ["GET", "POST"]
   }
 });
