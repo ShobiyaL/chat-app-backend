@@ -31,8 +31,6 @@ var User = mongoose.model('User', {
   password: String
 })
 
-// let db_name = 'simple_chat';
-// var dbUrl = `mongodb+srv://projects:h3FY8wg8Fo6ZqB9r@cluster0.ewns7qb.mongodb.net/${db_name}?retryWrites=true&w=majority`;
 
 app.get('/messages', (req, res) => {
   Message.find({}, (err, messages) => {
